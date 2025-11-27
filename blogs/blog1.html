@@ -4,23 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Blog Post</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="blog-style.css">
 </head>
 <body>
 
-    <header>
-        <h1>My First Blog Post</h1>
-        <p class="date">November 13, 2025</p>
-    </header>
+   
+    <nav id="desktop-nav">
+      <div class="logo">Davis Blogs</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#blogs">Blogs</a></li>
+          <li><a href="https://dayanithi.me" target="_blank">Portfolio</a></li>
+          <li><a href="#contact" >Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+      <div class="logo">Davis Blogs</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <hr>
 
-    <main>
-        <article>
-            <p>Welcome to my first blog post! I’m starting my own blogging journey using just HTML, CSS, and JS. No frameworks — pure creativity 🚀</p>
-            <p>In this post, I’ll share how I built my first blog page from scratch...</p>
-        </article>
+    <section class="blog-section" id="blog">
+        <div class="blogs-container">
+            <div class="blog-card">
+                <h2>My First Blog Post</h2>
+                <p>November 27, 2025</p>
+                <p>Welcome to my very first blog post! In this post, I want to share my journey of starting this blog and what you can expect in the future. As a developer and tech enthusiast, I believe in the power of sharing knowledge and experiences. Through this blog, I aim to document my learning process, share insights on various technical topics, and provide resources that can help others on similar paths. Stay tuned for more articles, tutorials, and discussions on programming, problem-solving, and much more!</p>
+                <center>
+                    <img class="blog-image" src="../assets/blog1.png" alt="Blog Image" class="blog-image">
+                </center>
+                <p>Thank you for joining me on this journey. I look forward to connecting with fellow learners and sharing valuable content that can make a difference. Happy reading!</p>
+                <a href="../index.html#blogs" class="back-to-blog">< Back</a>
+            </div>
+        </div>
+    </section>
 
-        <a href="../index.html">← Back to Home</a>
-    </main>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=dayanithisv@gmail.com" target="_blank">dayanithisv@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/dayanithi-sv/ " target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#blogs">Blogs</a></li>
+                    <li><a href="https://dayanithi.me" target="_blank">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Dayanithi S V. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>

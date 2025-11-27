@@ -3,36 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davis's Blog</title>
+    <title>Davis Blogs</title>
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2072791924523637"
      crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome To Davis's Blog</h1>
-        <p>Sharing ideas, projects, and experiences ✨</p>
-    </header>
+    <nav id="desktop-nav">
+      <div class="logo">Davis Blogs</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="https://dayanithi.me" target="_blank">Portfolio</a></li>
+          <li><a href="#contact" >Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+      <div class="logo">Davis Blogs</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
 
-    <main id="blog-list">
-        <a href="blogs/blog1.html">
-            <article class="post">
-                <h2>My First Blog Post</h2>
-                <p class="date">November 13, 2025</p>
-                <p class="summary">A quick look into my first step building a blog from scratch...</p>
-            </article>
-        </a>
+    <hr>
 
-      
+    <section id="home" class="home-section">
+      <div class="home-container">
+        <div class="introduction">
+          <div class="hero-section">
+            <img src="./assets/profile .png"
+            alt="profile picture"
+            class="profile-picture"/>
+            <h1>Hey I'm Davis</h1><br>
+          </div>
+            <p>Welcome to my personal blog - a space where I document my journey as a developer, problem solver, and tech learner. I created this blog to share what I learn every day, break down complex concepts, and hopefully help someone who’s walking the same path.</p>
+        </div>
 
-       
+        <div class="about">
+          <h1>What You'll Find Here</h1><br>
+          <ol class="about-list">
+            <li>
+              <h2>Technical Articles</h2>
+              <p>I write simple, clear explanations of technical concepts — from programming fundamentals to advanced topics. If I learn something useful, I break it down here.</p>
+            </li>
+            <li>
+              <h2>Aptitude & Problem-Solving</h2>
+              <p>Concept notes, tricks, and strategies I use for aptitude tests and logical reasoning. Short, sharp, and practical.</p> 
+            </li>
+            <li>    
+              <h2>Interview Experiences</h2>
+              <p>My real interview experiences — what went right, what went wrong, the questions they asked, and how I prepared.</p>
+            </li>
+            <li>
+              <h2>LeetCode & DSA Solutions (My Approach)</h2>
+              <p>Not just answers — I share my thinking process, patterns, and different ways to approach a problem so you can develop your own style.</p>
+            </li>
+            <li>
+              <h2>Cybersecurity Stuff</h2>
+              <p>Notes, projects, and explanations related to security — from simple vulnerabilities to practical defenses.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <section id="blogs" class="blogs-section">
+      <p class="section__text__p1">Latest Articles</p>
+      <h1 class="title">Blogs</h1>
 
-    <!-- <footer>
-        <p>© 2025 Davis | Built from scratch 💻</p>
-    </footer> -->
+      <div class="blogs-container">
+        <div class="blog-card">
+          <img src="assets/blog1.png"
+           alt="Blog Image" 
+           class="blog-image">
+          <h2>My First Blog</h2>
+           
+          <p>This is a brief description of my first blog post. It covers the basics of starting a blog and sharing your journey.</p>
+          <a href="../blogs/blog1.html" class="read-more">Read More ></a>
+        </div>
+        <!-- <div class="blog-card"></div>  
+        <div class="blog-card"></div>  
+        <div class="blog-card"></div>   -->
+
+
+                  
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=dayanithisv@gmail.com" target="_blank">dayanithisv@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/dayanithi-sv/ " target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="https://dayanithi.me" target="_blank">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Dayanithi S V. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

@@ -1,6 +1,6 @@
-console.log("Welcome to my blog!");
-
-// Example: Dark mode toggle (future)
-function toggleTheme() {
-    document.body.classList.toggle("dark");
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
 }
