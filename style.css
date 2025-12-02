@@ -65,7 +65,7 @@ a:hover {
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Cinzel Decorative', cursive;
   font-weight: bold;
   padding-right: 35rem;
@@ -173,6 +173,59 @@ a:hover {
   flex-direction: column;
 }
 
+/* ABOUT CAROUSEL */
+
+.carousel {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+    flex:0 0 100%;
+    &:hover .group {
+      animation-play-state: paused;
+    }
+  }
+
+ .group {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    will-change: transform; 
+    animation: scrolling 10s linear infinite;
+  }
+
+@keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+.about-card {
+  width:100%;
+  width:320px;
+  height:400px;
+  color: white;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+  padding: 20px;
+  min-height: 200px;
+}
+
+.about-card h2{
+  color: black;
+}
+
+.about-card-img{
+  width: 320px;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 .profile-picture{
   width: 50px;
   height: 50px;
@@ -187,7 +240,9 @@ a:hover {
   justify-content: center;
 }
 
-
+.hero-section h1{
+  margin-left:  10px;
+}
 
 /* SECTIONS */
 
@@ -276,7 +331,7 @@ section {
   flex-wrap: wrap;
   width: 100%;
   max-width: 320px; 
-  min-height: 360px;
+  min-height: 400px;
   padding: 16px;
   background: #ffffff;
   border-radius: 20px;
@@ -284,7 +339,7 @@ section {
   transition: 0.3s ease;
 }
 .blog-card h2{
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 1.5rem;;
 }
 
@@ -477,5 +532,23 @@ footer p {
   }
   .card-project{
     flex:0 0 100%;
+  }
+  .about-card {
+    height:350px;
+    width:280px;
+  }    
+  .about-card h2{
+    font-size:18px;
+    margin: 2px;
+  }
+  .about-card p{
+    font-size: 14px;
+  }
+  .about-card-img{
+    height:20vh;
+    width:280px;
+  }
+  .contact-info-container{
+    margin:5px;
   }
 }
