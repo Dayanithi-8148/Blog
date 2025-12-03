@@ -244,7 +244,7 @@ section {
     padding: 16px;
     background: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.12);
     transition: 0.3s ease;
 }
 
@@ -452,5 +452,8 @@ footer p {
   }
   .card-project{
     flex:0 0 100%;
+  }
+  .contact-info-container{
+    padding:5px;
   }
 }
