@@ -13,6 +13,7 @@
 body {
   text-align: justify;
   font-family: "Inter", sans-serif;
+  background-color: #EFE9E3;
 }
 
 body.changeColor *{
@@ -244,7 +245,7 @@ section {
   width:80vw;
   flex-wrap: wrap;
   padding: 16px;
-  background: #ffffff;
+  background: #F9F8F6;
   border-radius: 20px;
   box-shadow: 0 16px 60px rgba(0, 0, 0, 0.12);
   transition: 0.3s ease;

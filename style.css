@@ -12,6 +12,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color:#EFE9E3;
 }
 
 body.changeColor *{
@@ -215,6 +216,7 @@ a:hover {
   box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
   padding: 20px;
   min-height: 200px;
+  background-color:#F9F8F6;
 }
 
 .about-card h2{
@@ -338,7 +340,7 @@ section {
   max-width: 320px; 
   min-height: 400px;
   padding: 16px;
-  background: #ffffff;
+  background:#F9F8F6;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   transition: 0.3s ease;
